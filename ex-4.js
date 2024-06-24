@@ -8,9 +8,15 @@ const todos = [
 
 function getCompletedTodo(todos) {
   // Start coding here
+  let isTrue = todos.filter((x) => {
+    if(x.completed === true){
+      return x;
+    }
+  });
+  return isTrue;
 }
 
-getCompletedTodo(todos);
+let isTrueCom = getCompletedTodo(todos);
 
 /* 
 	Output:
@@ -20,3 +26,7 @@ getCompletedTodo(todos);
 	  { topic: 'Clean the room', completed: true }
 	]
 */
+
+
+
+console.log(isTrueCom);
